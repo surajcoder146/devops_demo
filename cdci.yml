@@ -22,8 +22,8 @@ permissions:
     - name: Build website
       run: |
         mkdir build 
-        cp 26.html build/
-        cp Style.css build/
+        cp index.html build/
+        cp style.css build/
 
 
     - name: Upload build
@@ -45,8 +45,8 @@ test:
 
    name: test website
    run: 
-    test -f buils/26.html
-    test -f build/Style.css
+    test -f buils/index.html
+    test -f build/style.css
 
    name: upload pages artifact
    users: actions/upload-pages-artifact@v4
